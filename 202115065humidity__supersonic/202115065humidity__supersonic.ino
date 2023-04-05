@@ -9,7 +9,7 @@ void loop() {
   float duration, distance;
   digitalWrite(trigPin, HIGH);   delay(10);
   digitalWrite(trigPin, LOW);
-  // echoPin이 HIGH를 유지한 시간을 저장
+  
   duration = pulseIn(echoPin, HIGH);
 
   distance = ((float)(340 * duration) / 10000) / 2;
